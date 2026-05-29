@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "enabled": true,
+  "name": "Extension Build Test",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Run `npm run build` in the /extension directory. \nIf the build fails, identify the error and fix it. \nCommon Plasmo issues to check: \n- content script exports must use `export {}` \n- background must export a default handler\n- Tailwind purge config must include src/**/*.tsx\n"
+  }
+}

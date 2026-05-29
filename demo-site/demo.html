@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meridian Supply Co. - ERP Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 p-8">
+  <div class="max-w-6xl mx-auto">
+    <!-- Header -->
+    <header class="mb-8">
+      <div class="flex items-center justify-between">
+        <div>
+          <h1 class="text-3xl font-bold text-gray-900">Meridian Supply Co.</h1>
+          <p class="text-gray-600 mt-1">FY2024 Financial Dashboard</p>
+        </div>
+        <div class="text-right text-sm text-gray-500">
+          <p>QuickBooks Online</p>
+          <p>Last Updated: Dec 31, 2024</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <h2 class="text-xl font-semibold text-gray-900 mb-4">Profit & Loss Statement</h2>
+        
+        <!-- Financial Table -->
+        <div class="overflow-x-auto">
+          <table 
+            id="financial-table" 
+            data-financial-table="true"
+            class="w-full border-collapse"
+          >
+            <thead>
+              <tr class="bg-gray-50 border-b-2 border-gray-300">
+                <th class="text-left py-3 px-4 font-semibold text-gray-700">Account</th>
+                <th class="text-right py-3 px-4 font-semibold text-gray-700">Q1 2024</th>
+                <th class="text-right py-3 px-4 font-semibold text-gray-700">Q2 2024</th>
+                <th class="text-right py-3 px-4 font-semibold text-gray-700">Q3 2024</th>
+                <th class="text-right py-3 px-4 font-semibold text-gray-700">Q4 2024</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Revenue -->
+              <tr class="border-b border-gray-200 hover:bg-gray-50">
+                <td class="py-3 px-4 font-medium text-gray-900">Revenue</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$850,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$920,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$1,050,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$1,210,000</td>
+              </tr>
+              
+              <!-- Cost of Goods Sold -->
+              <tr class="border-b border-gray-200 hover:bg-gray-50">
+                <td class="py-3 px-4 font-medium text-gray-900">Cost of Goods Sold</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$425,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$460,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$525,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$605,000</td>
+              </tr>
+              
+              <!-- Gross Profit -->
+              <tr class="border-b-2 border-gray-300 bg-blue-50 hover:bg-blue-100">
+                <td class="py-3 px-4 font-semibold text-gray-900">Gross Profit</td>
+                <td class="py-3 px-4 text-right font-mono font-semibold text-gray-900">$425,000</td>
+                <td class="py-3 px-4 text-right font-mono font-semibold text-gray-900">$460,000</td>
+                <td class="py-3 px-4 text-right font-mono font-semibold text-gray-900">$525,000</td>
+                <td class="py-3 px-4 text-right font-mono font-semibold text-gray-900">$605,000</td>
+              </tr>
+              
+              <!-- Operating Expenses Header -->
+              <tr class="bg-gray-100">
+                <td colspan="5" class="py-2 px-4 font-semibold text-gray-700 text-sm">Operating Expenses</td>
+              </tr>
+              
+              <!-- Marketing Expenses -->
+              <tr class="border-b border-gray-200 hover:bg-gray-50">
+                <td class="py-3 px-4 pl-8 text-gray-900">Marketing Expenses</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$85,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$92,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$105,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$152,500</td>
+              </tr>
+              
+              <!-- Payroll -->
+              <tr class="border-b border-gray-200 hover:bg-gray-50">
+                <td class="py-3 px-4 pl-8 text-gray-900">Payroll</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$180,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$185,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$190,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$195,000</td>
+              </tr>
+              
+              <!-- Software & Tools -->
+              <tr class="border-b border-gray-200 hover:bg-gray-50">
+                <td class="py-3 px-4 pl-8 text-gray-900">Software & Tools</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$25,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$28,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$30,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$32,000</td>
+              </tr>
+              
+              <!-- Travel & Entertainment -->
+              <tr class="border-b border-gray-200 hover:bg-gray-50">
+                <td class="py-3 px-4 pl-8 text-gray-900">Travel & Entertainment</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$15,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$18,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$22,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$28,000</td>
+              </tr>
+              
+              <!-- Office & Facilities -->
+              <tr class="border-b-2 border-gray-300 hover:bg-gray-50">
+                <td class="py-3 px-4 pl-8 text-gray-900">Office & Facilities</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$35,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$36,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$37,000</td>
+                <td class="py-3 px-4 text-right font-mono text-gray-900">$38,000</td>
+              </tr>
+              
+              <!-- Net Income -->
+              <tr class="bg-green-50 hover:bg-green-100">
+                <td class="py-3 px-4 font-bold text-gray-900">Net Income</td>
+                <td class="py-3 px-4 text-right font-mono font-bold text-green-700">$85,000</td>
+                <td class="py-3 px-4 text-right font-mono font-bold text-green-700">$101,000</td>
+                <td class="py-3 px-4 text-right font-mono font-bold text-green-700">$141,000</td>
+                <td class="py-3 px-4 text-right font-mono font-bold text-green-700">$159,500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Info Box -->
+      <div class="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+        <p class="text-sm text-blue-800">
+          <strong>💡 Demo Mode:</strong> This is a simulated ERP dashboard for demonstration purposes. 
+          The Finance Copilot extension will automatically activate on this page.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-8 text-center text-sm text-gray-500">
+      <p>Meridian Supply Co. © 2024 | Demo Dashboard for Finance Copilot Extension</p>
+    </footer>
+  </div>
+</body>
+</html>

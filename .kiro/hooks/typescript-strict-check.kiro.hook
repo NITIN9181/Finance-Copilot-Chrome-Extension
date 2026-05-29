@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "enabled": true,
+  "name": "TypeScript Strict Check",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "*.tsx, *.ts"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Run TypeScript compiler check on the saved file. \nIf there are type errors, fix them immediately before proceeding. \nPay special attention to chrome.* API types — ensure @types/chrome is installed.\n"
+  }
+}
