@@ -66,3 +66,4 @@ test-results/
 
 # Chrome extension key (auto-generated, contains private key)
 key.pem
+.kiro/specs/finance-copilot/tasks.md

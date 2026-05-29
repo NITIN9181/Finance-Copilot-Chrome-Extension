@@ -27,8 +27,8 @@ The implementation uses TypeScript with React throughout, following Plasmo frame
     - Define component prop types for all React components
     - _Requirements: 3.1, 3.2_
 
-- [ ] 3. Implement financial table detection and extraction
-  - [ ] 3.1 Create table detection algorithm in content script
+- [x] 3. Implement financial table detection and extraction
+  - [x] 3.1 Create table detection algorithm in content script
     - Scan DOM for all table elements on page load (document_idle)
     - Check for data-financial-table="true" attribute (demo site priority)
     - Implement isFinancialTable classifier: ≥1 label column (non-numeric text) AND ≥2 currency columns ($ or , with numbers)
@@ -36,7 +36,7 @@ The implementation uses TypeScript with React throughout, following Plasmo frame
     - Complete detection within 2 seconds of page load
     - _Requirements: 2.1, 2.2, 2.3, 2.6_
   
-  - [ ] 3.2 Implement currency parsing utility
+  - [x] 3.2 Implement currency parsing utility
     - Parse "$1,234.56" → 1234.56 (strip $ and commas)
     - Parse "($1,234.56)" or "-$1,234.56" → -1234.56 (handle negatives)
     - Parse "1,234,567" → 1234567 (handle comma-only format)
@@ -44,7 +44,7 @@ The implementation uses TypeScript with React throughout, following Plasmo frame
     - Preserve up to 2 decimal places
     - _Requirements: 3.3, 3.5_
   
-  - [ ] 3.3 Implement data extraction and serialization
+  - [x] 3.3 Implement data extraction and serialization
     - Extract account labels from first column
     - Extract period identifiers from header row
     - Build Financial_Dataset JSON with metadata, periods array, and accounts map
