@@ -53,21 +53,21 @@ The implementation uses TypeScript with React throughout, following Plasmo frame
     - Add metadata: sourceUrl, extractedAt timestamp, companyName if detectable
     - _Requirements: 3.1, 3.2, 3.5, 3.6_
   
-  - [ ]* 3.4 Write property test for table classification
+  - [x]* 3.4 Write property test for table classification
     - **Property 1: Table Classification Correctness**
     - **Validates: Requirements 2.2**
     - Generate random HTML tables with varying column structures
     - Verify tables with ≥1 label column AND ≥2 currency columns return true
     - Verify tables not meeting criteria return false
   
-  - [ ]* 3.5 Write property test for currency parsing
+  - [x]* 3.5 Write property test for currency parsing
     - **Property 3: Currency Parsing Correctness**
     - **Validates: Requirements 3.3**
     - Generate random currency strings with various formats
     - Verify correct numeric extraction with proper sign handling
     - Verify null return for unparseable strings
   
-  - [ ]* 3.6 Write property test for round-trip serialization
+  - [x]* 3.6 Write property test for round-trip serialization
     - **Property 4: Serialization Round-Trip Preservation**
     - **Validates: Requirements 3.4**
     - Generate random Financial_Dataset with various account/period combinations
