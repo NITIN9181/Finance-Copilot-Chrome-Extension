@@ -4,6 +4,8 @@
  * Types for chat interface and API communication
  */
 
+import type { FinancialDataset } from './financial-dataset'
+
 export interface ChatMessage {
   role: 'user' | 'assistant' | 'system'
   content: string
@@ -16,4 +18,5 @@ export interface ChatState {
   queryQuota: 20
   isLoading: boolean
   error: string | null
+  dataset: FinancialDataset | null
 }

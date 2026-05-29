@@ -29,9 +29,13 @@ desktop.ini
 
 # IDE
 .idea/
+.vscode/
 *.swp
 *.swo
 *~
+
+# Kiro workspace (keep specs/steering, ignore generated config)
+.kiro/settings/
 
 # TypeScript
 *.tsbuildinfo
@@ -56,3 +60,9 @@ test-results/
 # Misc
 .cache/
 *.local
+
+# Plasmo cache (generated, not source)
+.plasmo/cache/
+
+# Chrome extension key (auto-generated, contains private key)
+key.pem
